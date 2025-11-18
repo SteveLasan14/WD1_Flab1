@@ -1,1 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Product Page</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="file.js" defer></script>
+</head>
 
+<body>
+
+  <header>
+    <h1>WELCOME TO LASNACKS PAGE</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="product.html">Product</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+  </header>
+
+  <div class="body-content">
+
+    <!-- PRODUCT LIST -->
+    <div class="products">
+
+      <div class="row1">
+        <div class="card">
+          <img src="IMG/deligth.jpg" alt="Delight">
+          <h3>Delight</h3>
+          <p>₱60</p>
+          <button onclick="addToCart('Delight', 60)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+          <img src="IMG/localy.webp" alt="Localy">
+          <h3>Localy</h3>
+          <p>₱25</p>
+          <button onclick="addToCart('Localy', 25)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+          <img src="IMG/Kahlua-Coffee-003.jpg" alt="Kahlua">
+          <h3>Kahlua</h3>
+          <p>₱55</p>
+          <button onclick="addToCart('Kahlua', 55)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+          <img src="IMG/BLUE.jpg" alt="Blue Drink">
+          <h3>Blue</h3>
+          <p>₱45</p>
+          <button onclick="addToCart('Blue', 45)">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="row2">
+        <div class="card">
+          <img src="IMG/roller.jpg" alt="Roller Coaster">
+          <h3>Roller Coaster</h3>
+          <p>₱10</p>
+          <button onclick="addToCart('Roller Coaster', 10)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+          <img src="IMG/pier.jpg" alt="Pier28">
+          <h3>Pier28</h3>
+          <p>₱10</p>
+          <button onclick="addToCart('Pier28', 10)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+          <img src="IMG/pretties.jpg" alt="Pretties">
+          <h3>Pretties</h3>
+          <p>₱25</p>
+          <button onclick="addToCart('Pretties', 25)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+          <img src="IMG/lentil.jpg" alt="Lentil Chips">
+          <h3>Lentil Chips</h3>
+          <p>₱30</p>
+          <button onclick="addToCart('Lentil Chips', 30)">Add to Cart</button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- CART -->
+    <aside>
+      <h3>Cart</h3>
+      <p id="cart-list">Cart is empty</p>
+      <button onclick="checkout()">Checkout</button>
+    </aside>
+
+  </div>
+
+  <footer>
+    <p>Developed by: STEVE L | 2025 LaSnacks Page</p>
+  </footer>
+
+</body>
+</html>
